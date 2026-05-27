@@ -1,0 +1,133 @@
+/* Базовые настройки */
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-main: #f5f5f5;
+    --text-muted: #a0a0a0;
+    --accent: #ff5722; /* Цвет кнопок и ссылок (можно изменить на синий, например #00a8ff) */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+/* Шапка сайта */
+header {
+    background-color: #0a0a0a;
+    padding: 80px 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: var(--accent);
+    margin-bottom: 20px;
+}
+
+.bio {
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 25px;
+    background-color: var(--card-bg);
+    color: var(--text-main);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+    border: 1px solid #333;
+}
+
+.social-links a:hover {
+    background-color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* Галерея (Сетка работ) */
+main {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* Настройки для картинок и 3D-вьювера внутри карточек */
+.project-card img, 
+.project-card model-viewer {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-color: #000;
+    display: block;
+}
+
+/* model-viewer не имеет object-fit, поэтому задаем ему фон для контраста */
+.project-card model-viewer {
+    background-color: #1a1a1a; 
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    border-top: 1px solid #333;
+    margin-top: 40px;
+}

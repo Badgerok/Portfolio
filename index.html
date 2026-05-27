@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Даниил | 3D Artist Portfolio</title>
+    <!-- Подключаем наш файл стилей -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Подключаем библиотеку для просмотра 3D моделей -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <!-- Подключаем красивый шрифт -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Данил</h1>
+            <p class="subtitle">3D Environment Artist / Prop Artist</p>
+            <p class="bio">Создаю высокополигональные и оптимизированные для движков (Game-Ready) модели. Работаю в Blender, ZBrush, Substance Painter.</p>
+            <div class="social-links">
+                <a href="https://artstation.com/" target="_blank">ArtStation</a>
+                <a href="mailto:твоя_почта@email.com">Email</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery">
+            <!-- Проект 1: Обычный рендер (картинка) -->
+            <div class="project-card">
+                <img src="assets/render1.jpg" alt="Sci-Fi Container Render">
+                <div class="project-info">
+                    <h3>Sci-Fi Container</h3>
+                    <p>Game-ready пропс. 4K текстуры, 2500 трисов.</p>
+                </div>
+            </div>
+
+            <!-- Проект 2: Интерактивная 3D-модель -->
+            <div class="project-card">
+                <!-- Сюда вставляем твою модель .glb -->
+                <model-viewer src="assets/my_model.glb" 
+                              auto-rotate 
+                              camera-controls 
+                              shadow-intensity="1"
+                              environment-image="neutral"
+                              exposure="1">
+                </model-viewer>
+                <div class="project-info">
+                    <h3>Ржавый топор (Интерактив)</h3>
+                    <p>Покрутите модель мышкой. Sculpting в ZBrush, текстуры Substance Painter.</p>
+                </div>
+            </div>
+
+            <!-- Проект 3: Breakdown (сетка) -->
+            <div class="project-card">
+                <img src="assets/wireframe.jpg" alt="Wireframe Breakdown">
+                <div class="project-info">
+                    <h3>Окружение: Заброшенная комната</h3>
+                    <p>Топология и сетка сцены. Оптимизировано под Unreal Engine 5.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Даниил. Создано с любовью к 3D.</p>
+    </footer>
+
+</body>
+</html>
