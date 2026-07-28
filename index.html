@@ -27,104 +27,63 @@
 
     <main>
         <section class="gallery">
-            <!-- Проект 1: Обычный рендер (картинка) -->
-			
-			<div class="project-card">
-                <img src="assets/Telex_keyboard4.png" alt="telex keyboard">
-                <div class="project-info">
-                    <h3>Vintage telex keyboard</h3>
-                    <p></p>
-                </div>
-            </div>
-			
-			<div class="project-card">
-                <img src="assets/Telex_keyboard6.png" alt="telex keyboard">
-                <div class="project-info">
-                    <h3>Vintage telex keyboard</h3>
-                    <p></p>
-                </div>
-            </div>
-			
-            <div class="project-card">
-                <img src="assets/Spaceships1.png" alt="Spaceships scene">
-                <div class="project-info">
-                    <h3>Spaceships for isometric game</h3>
-                    <p>Модели космических кораблей смоделированные в blender и преобразованные в спрайты для создания ретро эстетики </p>
-                </div>
-            </div>
-			
-			  <div class="project-card">
-                <img src="assets/TestScene.jpg" alt="Spaceships scene">
-                <div class="project-info">
-                    <h3>Test draft scene for isometic space game</h3>
-                    <p>Тестовая сцена для проверки спрайтов</p>
-                </div>
-            </div>
-			
-			<div class="project-card">
-                <img src="assets/MainMenu.png" alt="Main menu">
-                <div class="project-info">
-                    <h3>Main menu for a Bushplane game</h3>
-                    <p></p>
-                </div>
-            </div>
-			
-			<div class="project-card">
-                <img src="assets/Hangar.png" alt="Hangar">
-                <div class="project-info">
-                    <h3>Hangar with bushplane</h3>
-                    <p></p>
-                </div>
-            </div>
-			
-			<div class="project-card">
-                <img src="assets/Level1.png" alt="level">
-                <div class="project-info">
-                    <h3>Bushplane game location</h3>
-                    <p></p>
-                </div>
-            </div>
-			
-			<!-- Проект 2: Интерактивная 3D-модель -->
-            <div class="project-card">
-                <!-- Сюда вставляем твою модель .glb -->
-                <model-viewer src="assets/Bushplane.glb" 
-                              auto-rotate 
-                              camera-controls 
-                              shadow-intensity="1"
-                              environment-image="neutral"
-                              exposure="1">
-                </model-viewer>
-                <div class="project-info">
-                    <h3>Bushplane</h3>
-                    <p>Модель самолета STOL для игры на godot</p>
-                </div>
-            </div>
-			
-			<div class="project-card">
-                <img src="assets/watch1.png" alt="watch1">
-                <div class="project-info">
-                    <h3>Homemade old watch</h3>
-                    <p></p>
-                </div>
-            </div>
-			
-			<div class="project-card">
-                <img src="assets/watch2.png" alt="watch2">
-                <div class="project-info">
-                    <h3>Homemade old watch</h3>
-                    <p></p>
-                </div>
-            </div>
-			
-			<div class="project-card">
-                <img src="assets/RenderStalinkaFinal.png" alt="stalinka">
-                <div class="project-info">
-                    <h3>Cycles render of an old residential area</h3>
-                    <p></p>
-                </div>
-            </div>
             
+            <!-- ПРОЕКТ 1: Telex keyboard -->
+            <a href="project-telex.html" class="project-card-link">
+                <div class="project-card">
+                    <!-- Используем первую картинку как обложку -->
+                    <img src="assets/Telex_keyboard4.png" alt="Vintage telex keyboard">
+                    <div class="project-info">
+                        <h3>Vintage telex keyboard</h3>
+                        <p>Нажмите для просмотра всех ракурсов.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ПРОЕКТ 2: Кораблики (включает и сами корабли, и тестовую сцену) -->
+            <a href="project-spaceships.html" class="project-card-link">
+                <div class="project-card">
+                    <img src="assets/Spaceships1.png" alt="Spaceships scene">
+                    <div class="project-info">
+                        <h3>Spaceships for isometric game</h3>
+                        <p>Модели космических кораблей, смоделированные в Blender и преобразованные в спрайты для ретро эстетики.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ПРОЕКТ 3: Игра про самолет (Bushplane, локации, меню и 3D модель) -->
+            <a href="project-bushplane.html" class="project-card-link">
+                <div class="project-card">
+                    <!-- В качестве обложки берем скриншот ангара -->
+                    <img src="assets/Hangar.png" alt="Bushplane game project">
+                    <div class="project-info">
+                        <h3>Bushplane Game Project</h3>
+                        <p>Локации, меню и 3D-модель самолета STOL для движка Godot.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ПРОЕКТ 4: Часы -->
+            <a href="project-watch.html" class="project-card-link">
+                <div class="project-card">
+                    <img src="assets/watch1.png" alt="Homemade old watch">
+                    <div class="project-info">
+                        <h3>Homemade old watch</h3>
+                        <p>Нажмите для просмотра.</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- ПРОЕКТ 5: Сталинка -->
+            <a href="project-stalinka.html" class="project-card-link">
+                <div class="project-card">
+                    <img src="assets/RenderStalinkaFinal.png" alt="Cycles render of an old residential area">
+                    <div class="project-info">
+                        <h3>Cycles render of an old residential area</h3>
+                        <p>Нажмите для просмотра.</p>
+                    </div>
+                </div>
+            </a>
 
         </section>
     </main>
@@ -133,66 +92,5 @@
         <p>© 2026 Даниил. Создано с любовью к 3D.</p>
     </footer>
 
-<!-- HTML для полноэкранного окна -->
-    <div id="lightbox" class="lightbox">
-        <span class="close-btn">&times;</span>
-        <div id="lightbox-content" class="lightbox-content"></div>
-    </div>
-
-    <!-- JavaScript для работы полноэкранного режима -->
-    <script>
-        const lightbox = document.getElementById('lightbox');
-        const lightboxContent = document.getElementById('lightbox-content');
-        const closeBtn = document.querySelector('.close-btn');
-
-        // Находим все картинки и 3D-модели внутри карточек
-        const mediaElements = document.querySelectorAll('.project-card img, .project-card model-viewer');
-
-        mediaElements.forEach(el => {
-            el.addEventListener('click', () => {
-                lightbox.classList.add('active'); // Показываем окно
-                lightboxContent.innerHTML = '';   // Очищаем старое
-
-                // Если кликнули на картинку
-                if (el.tagName.toLowerCase() === 'img') {
-                    const img = document.createElement('img');
-                    img.src = el.src;
-                    lightboxContent.appendChild(img);
-                } 
-                // Если кликнули на 3D модель
-                else if (el.tagName.toLowerCase() === 'model-viewer') {
-                    const viewer = document.createElement('model-viewer');
-                    viewer.src = el.src;
-                    viewer.setAttribute('auto-rotate', '');
-                    viewer.setAttribute('camera-controls', '');
-                    viewer.setAttribute('shadow-intensity', '1');
-                    lightboxContent.appendChild(viewer);
-                }
-            });
-        });
-
-        // Закрытие по клику на крестик
-        closeBtn.addEventListener('click', () => {
-            lightbox.classList.remove('active');
-            lightboxContent.innerHTML = '';
-        });
-
-        // Закрытие по клику мимо картинки/модели (по темному фону)
-        lightbox.addEventListener('click', (e) => {
-            if (e.target === lightbox) {
-                lightbox.classList.remove('active');
-                lightboxContent.innerHTML = '';
-            }
-        });
-
-        // Закрытие по нажатию клавиши Esc
-        document.addEventListener('keydown', (e) => {
-            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-                lightbox.classList.remove('active');
-                lightboxContent.innerHTML = '';
-            }
-        });
-    </script>
-	
 </body>
 </html>
