@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old telex keyboard | Даинил</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Навигация проекта -->
+    <nav class="project-nav">
+        <a href="index.html" class="back-btn">← Вернуться в портфолио</a>
+    </nav>
+
+    <!-- Заголовок и описание -->
+    <header class="project-header">
+        <div class="header-content">
+            <h1>Bushplane: локации и пропы</h1>
+            <p class="subtitle"></p>
+            <p class="bio">Созданы для игры на godot про самолет STOL (short take off and landing)</p>
+        </div>
+    </header>
+
+    <!-- Основной контент (Лента ArtStation) -->
+    <main class="project-content">
+        
+        <!-- Главный рендер -->
+        <div class="project-asset">
+            <img src="assets/Hangar.png" alt="" onerror="this.src='https://placehold.co/1400x800/222/555?text=Main+Render'">
+        </div>
+
+        <!-- Интерактивная 3D-модель -->
+        <div class="project-asset interactive-3d">
+            <model-viewer src="assets/Bushplane.glb" 
+                          auto-rotate 
+                          camera-controls 
+                          shadow-intensity="1"
+                          environment-image="neutral"
+                          exposure="1"
+                          alt="3D модель самолета">
+            </model-viewer>
+            <p class="hint">Крутите модель левой кнопкой мыши, масштабируйте колесиком.</p>
+        </div>
+
+        <!-- Дополнительные ракурсы -->
+        <div class="project-asset">
+            <img src="assets/Level1.png" alt="" onerror="this.src='https://placehold.co/1400x800/222/555?text=Detail+Render'">
+        </div>
+		
+		<div class="project-asset">
+            <img src="assets/MainMenu.png" alt="" onerror="this.src='https://placehold.co/1400x800/222/555?text=Detail+Render'">
+        </div>
+		
+		
+		
+        <!-- Сетка (Wireframe) -->
+        <div class="project-asset">
+            <img src="assets/axe_wireframe.jpg" alt="Wireframe" onerror="this.src='https://placehold.co/1400x800/222/555?text=Wireframe+View'">
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Даниил.</p>
+    </footer>
+
+</body>
+</html>
